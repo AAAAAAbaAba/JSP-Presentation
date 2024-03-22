@@ -2,7 +2,9 @@
 ####################################################
 ## Create image for web-api
 ####################################################
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+# FROM mcr.microsoft.com/dotnet/sdk:3.1
+FROM registry.cn-hangzhou.aliyuncs.com/newbe36524/sdk:3.1
+# RUN docker tag registry.cn-hangzhou.aliyuncs.com/newbe36524/sdk:3.1 mcr.microsoft.com/dotnet/core/sdk:3.1
 #proxy configuration if necessary
 # ENV http_proxy=****
 # ENV https_proxy=****

@@ -25,6 +25,8 @@ RUN tar -zxvf or-tools_ubuntu-20.04_v7.8.7959.tar.gz
 RUN mv or-tools_Ubuntu-20.04-64bit_v7.8.7959 src/or-tools
 RUN rm or-tools_ubuntu-20.04_v7.8.7959.tar.gz
 # Or-tools' jar files are local dependencies, we need install them into local
+# RUN mvn install:install-file -Dfile=./src/or-tools/lib/com.google.ortools.jar -DgroupId=com.google.ortools -DartifactId=ortools-java -Dversion=1.0.0  -Dpackaging=jar
+# RUN mvn install:install-file -Dfile=./src/or-tools/lib/protobuf.jar -DgroupId=com.google.protobuf -DartifactId=protobuf-java -Dversion=3.6.1  -Dpackaging=jar
 RUN mvn install:install-file '-Dfile=./src/or-tools/lib/com.google.ortools.jar' '-DgroupId=com.google.ortools' '-DartifactId=ortools-java' '-Dversion=1.0.0'  '-Dpackaging=jar'
 RUN mvn install:install-file '-Dfile=./src/or-tools/lib/protobuf.jar' '-DgroupId=com.google.protobuf' '-DartifactId=protobuf-java' '-Dversion=3.6.1'  '-Dpackaging=jar'
 # Package 

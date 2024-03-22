@@ -87,10 +87,11 @@ under the License.
    | Unless otherwise specified (by system property or command-line switch), the first proxy
    | specification in this list marked as active will be used.
    |-->
-     <!-- <proxies>
+  <!-- <proxies> -->
     <!-- proxy
      | Specification for one proxy, to be used in connecting to the network.
      |-->
+  <!--
     <proxy>
       <id>bosch-proxy-http</id>
       <active>true</active>
@@ -101,8 +102,7 @@ under the License.
       <port>8080</port>
       <nonProxyHosts></nonProxyHosts>
     </proxy>
-	
-	<proxy>
+  <proxy>
       <id>bosch-proxy-https</id>
       <active>true</active>
       <protocol>https</protocol>
@@ -112,7 +112,6 @@ under the License.
       <port>8080</port>
       <nonProxyHosts></nonProxyHosts>
     </proxy>
-    
   </proxies>   -->
 
   <!-- servers
